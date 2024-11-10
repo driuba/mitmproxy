@@ -11,6 +11,7 @@ from mitmproxy.addons import cut
 from mitmproxy.addons import disable_h2c
 from mitmproxy.addons import dns_resolver
 from mitmproxy.addons import export
+from mitmproxy.addons import map_raw
 from mitmproxy.addons import maplocal
 from mitmproxy.addons import mapremote
 from mitmproxy.addons import modifybody
@@ -53,6 +54,7 @@ def default_addons():
         dns_resolver.DnsResolver(),
         next_layer.NextLayer(),
         serverplayback.ServerPlayback(),
+        map_raw.MapRaw(),
         mapremote.MapRemote(),
         maplocal.MapLocal(),
         modifybody.ModifyBody(),
